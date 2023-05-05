@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image" href="image/logo.png">
+    
+    <!-- font links  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Uchen&display=swap" rel="stylesheet">
+    <!-- end font links  -->
+
+    <!-- AOS Animate Liberary  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS Animate Liberary end -->
+    
+    <title>Cakes Bakery</title>
+</head>
+<body>
+
+    <div class="all-content">
+
+            <!-- navbar  -->
+        <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid " id="navbar">       
+            <a id="logo" class="navbar-brand " href="#">
+            <img src="image/logo.png" width="50px" alt=""><span>Cake Bakery</span></a>
+          
+          
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span ><img src="image/menu.png" width="30px" alt=""></span>
+          </button>
+
+
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav p-3 ms-3 ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Category
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Birthday Cak</a></li>
+                    <li><a class="dropdown-item" href="#">Chocolate Cake</a></li>
+                    <li><a class="dropdown-item" href="#">Party Cake</a></li>
+                    <li><a class="dropdown-item" href="#">Slice Cake</a></li>
+                    <li><a class="dropdown-item" href="#">Cup Cake</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Gallary</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="social-icons d-flex me-2">
+            <div class="nav-icon text-white ">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="nav-icon text-white ">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="nav-icon text-white ">
+                <i class="fa-solid fa-cart-plus"></i>
+            </div>
+
+
+            
+          </div>
+
+        </div>
+        </nav>
+            <!-- navbar end  -->
+
+            <!-- home section -->
+        <section id="home" class="home w-100  d-flex justify-content-around  align-items-center">
+
+          
+
+            <div class="home-content " data-aos="zoom-in-right" >
+                <h2>Delicious<br> Cakes Bakery</h2>
+                <h3>Category <span class="move"></span></h3>
+                <p class="text-white fw-bold ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error,
+                    Lorem ipsum dolor sit amet consectetur.</p>
+                <a class="btn" href="#">Order Now</a>
+            </div>
+
+            <div class="home-image "data-aos="zoom-in-left" >
+                <img src="image/background.png" alt="">
+            </div>
+        </section>
+            <!-- home section end -->
+        
+
+            <!-- top cards section  -->
+        <section id="boxs" data-aos="fade-up"
+        data-aos-duration="1500" >
+            <div class="container box-cards">
+              <div class="row justify-content-center">
+                  <div class="col-lg-4 col-md-6 py-3" >
+                      <div class="card">
+                          <img class="w-100" src="image/box1.jpg" alt="">
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 py-3" >
+                      <div class="card">
+                          <img class="w-100 " src="image/box2.jpg" alt="">
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 py-3" >
+                      <div class="card">
+                          <img class="w-100 " src="image/box3.jpg" alt="">
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </section>  
+            <!-- top cards section end -->
+
+            
+        <!-- discount section -->
+        <section id="discount" data-aos="fade-up"
+        data-aos-duration="1500">
+            <div class="discount w-100 flex-wrap vh-60 d-flex justify-content-center align-items-center">
+                <div class="discount-content home-content" >
+                    <h3>Delicious Cake</h3>
+                    <h2>UPTO 50% OFF</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, quod.</p>
+                    <div class="btn-discount"><button>Order Now</button></div>
+                    <!-- <a href="#" class="btn-discount">Order Now</a> -->
+                </div>
+                <div class="discount-image" >
+                    <img class="w-100" src="image/banner-background.png" alt="">
+                </div>
+                
+            </div>
+        </section>
+        <!-- discount section end -->
+
+
+        <!-- product cards section -->
+
+        <section id="product-card" class="CAKS" >             
+            <div class="container">
+               <h1 class="title" data-aos="fade-up"
+                data-aos-duration="1500">CAKES</h1>
+               <div class="row mt-5" >
+
+                   <div class="col-lg-3 col-md-6 col-sm-12 py-3" data-aos="fade-up"
+                    data-aos-duration="1500">
+                       
+                           
+                           <div class="card">
+                               <div class="overlay">
+                                   <button title="Quick View"><i><img src="image/views.png" alt=""></i></button>
+                                   <button title="Add To Wishlist"><i><img src="image/heart.png" alt=""></i></button>
+                                   <button title="Add To Cart"><i><img src="image/add.png" alt=""></i></button>
+
+                               </div>
+                               <img class="w-100" src="image/c1.png" alt="">
+                               <div class="content">
+                                   <div>
+                                       <h3>Cream Cake</h3>
+                                       <div class="stars py-2">
+                                           <i class="fa-solid fa-star checked"></i>
+                                           <i class="fa-solid fa-star checked"></i>
+                                           <i class="fa-solid fa-star checked"></i>
+                                           <i class="fa-solid fa-star"></i>
+                                           <i class="fa-solid fa-star"></i>
+                                       </div>
+                                       <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                       <h6>$50.10 <span><button>Add Cart</button></span> </h6>
+                                   </div>
+                               </div>
+                           </div>
+                       
+                   </div>
+
+                   <div class="col-lg-3 col-md-6 col-sm-12 py-3" data-aos="fade-up"
+                    data-aos-duration="1500">
+                       
+                           
+                       <div class="card">
+                           <div class="overlay">
+                               <button title="Quick View"><i><img src="image/views.png" alt=""></i></button>
+                               <button title="Add To Wishlist"><i><img src="image/heart.png" alt=""></i></button>
+                               <button title="Add To Cart"><i><img src="image/add.png" alt=""></i></button>
+
+                           </div>
+                           <img class="w-100" src="image/c2.png" alt="">
+                           <div class="content">
+                               <div>
+                                   <h3>Choco Cake</h3>
+                                   <div class="stars py-2">
+                                       <i class="fa-solid fa-star checked"></i>
+                                       <i class="fa-solid fa-star checked"></i>
+                                       <i class="fa-solid fa-star checked"></i>
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="fa-solid fa-star"></i>
+                                   </div>
+                                   <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                   <h6>$60.5 <span><button>Add Cart</button></span> </h6>
+                               </div>
+                           </div>
+                       </div>
+                   
+                   </div>
+
+                   <div class="col-lg-3 col-md-6 col-sm-12 py-3" data-aos="fade-up"
+                    data-aos-duration="1500">
+                       
+                           
+                   <div class="card">
+                       <div class="overlay">
+                           <button title="Quick View"><i><img src="image/views.png" alt=""></i></button>
+                           <button title="Add To Wishlist"><i><img src="image/heart.png" alt=""></i></button>
+                           <button title="Add To Cart"><i><img src="image/add.png" alt=""></i></button>
+
+                       </div>
+                       <img class="w-100" src="image/c3.png" alt="">
+                       <div class="content">
+                           <div>
+                               <h3>Slice Cake</h3>
+                               <div class="stars py-2">
+                                   <i class="fa-solid fa-star checked"></i>
+                                   <i class="fa-solid fa-star checked"></i>
+                                   <i class="fa-solid fa-star checked"></i>
+                                   <i class="fa-solid fa-star checked"></i>
+                                   <i class="fa-solid fa-star"></i>
+                               </div>
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                               <h6>$100.10 <span><button>Add Cart</button></span> </h6>
+                           </div>
+                       </div>
+                   </div>
+               
+                   </div>
+                   
+                   <div class="col-lg-3 col-md-6 col-sm-12 py-3" data-aos="fade-up"
+                    data-aos-duration="1500">
+                       
+                           
+               <div class="card">
+                   <div class="overlay">
+                       <button title="Quick View"><i><img src="image/views.png" alt=""></i></button>
+                       <button title="Add To Wishlist"><i><img src="image/heart.png" alt=""></i></button>
+                       <button title="Add To Cart"><i><img src="image/add.png" alt=""></i></button>
+
+                   </div>
+                   <img class="w-100" src="image/c4.png" alt="">
+                   <div class="content">
+                       <div>
+                           <h3>Fruit Cake</h3>
+                           <div class="stars py-2">
+                               <i class="fa-solid fa-star checked"></i>
+                               <i class="fa-solid fa-star checked"></i>
+                               <i class="fa-solid fa-star checked"></i>
+                               <i class="fa-solid fa-star checked"></i>
+                               <i class="fa-solid fa-star checked"></i>
+                           </div>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                           <h6>$30.20 <span><button>Add Cart</button></span> </h6>
+                       </div>
+                   </div>
+               </div>
+           
+                   </div>
+
+                   <div class="col-lg-3 col-md-6 col-sm-12 py-3" data-aos="fade-up"
+                    data-aos-duration="1500">
+                       
+                           
+                       <div class="card">
+                           <div class="overlay">
+                               <button title="Quick View"><i><img src="image/views.png" alt=""></i></button>
+                               <button title="Add To Wishlist"><i><img src="image/heart.png" alt=""></i></button>
+                               <button title="Add To Cart"><i><img src="image/add.png" alt=""></i></button>
+
+                           </div>
+                           <img class="w-100" src="image/c5.png" alt="">
+                           <div class="content">
+                               <div>
+                                   <h3>Brown Cake</h3>
+                                   <div class="stars py-2">
+                                       <i class="fa-solid fa-star checked"></i>
+                                       <i class="fa-solid fa-star checked"></i>
+                                       <i class="fa-solid fa-star checked"></i>
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="fa-solid fa-star"></i>
+                                   </div>
+                                   <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                   <h6>$10.5 <span><button>Add Cart</button></span> </h6>
+                               </div>
+                           </div>
+                       </div>
+                   
+                   </div>
+
+                   <div class="col-lg-3 col-md-6 col-sm-12 py-3" data-aos="fade-up"
+                    data-aos-duration="1500">
+                       
+                           
+                       <div class="card">
+                           <div class="overlay">
+                               <button title="Quick View"><i><img src="image/views.png" alt=""></i></button>
+                               <button title="Add To Wishlist"><i><img src="image/heart.png" alt=""></i></button>
+                               <button title="Add To Cart"><i><img src="image/add.png" alt=""></i></button>
+
+                           </div>
+                           <img class="w-100" src="image/c6.png" alt="">
+                           <div class="content">
+                               <div>
+                                   <h3>Slice Cake</h3>
+                                   <div class="stars py-2">
+                                       <i class="fa-solid fa-star checked"></i>
+                                       <i class="fa-solid fa-star checked"></i>
+                                       <i class="fa-solid fa-star checked"></i>
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="fa-solid fa-star"></i>
+                                   </div>
+                                   <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                   <h6>$15.5 <span><button>Add Cart</button></span> </h6>
+                               </div>
+                           </div>
+                       </div>
+                   
+                   </div>
+
+                   <div class="col-lg-3 col-md-6 col-sm-12 py-3" data-aos="fade-up"
+                    data-aos-duration="1500">
+                       
+                           
+                   <div class="card">
+                       <div class="overlay">
+                           <button title="Quick View"><i><img src="image/views.png" alt=""></i></button>
+                           <button title="Add To Wishlist"><i><img src="image/heart.png" alt=""></i></button>
+                           <button title="Add To Cart"><i><img src="image/add.png" alt=""></i></button>
+
+                       </div>
+                       <img class="w-100" src="image/c7.png" alt="">
+                       <div class="content">
+                           <div>
+                               <h3>Fruit Cake</h3>
+                               <div class="stars py-2">
+                                   <i class="fa-solid fa-star checked"></i>
+                                   <i class="fa-solid fa-star "></i>
+                                   <i class="fa-solid fa-star "></i>
+                                   <i class="fa-solid fa-star "></i>
+                                   <i class="fa-solid fa-star"></i>
+                               </div>
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                               <h6>$200.10 <span><button>Add Cart</button></span> </h6>
+                           </div>
+                       </div>
+                   </div>
+               
+                   </div>
+                   
+                   <div class="col-lg-3 col-md-6 col-sm-12 py-3" data-aos="fade-up"
+                    data-aos-duration="1500">
+                       
+                           
+               <div class="card">
+                   <div class="overlay">
+                       <button title="Quick View"><i><img src="image/views.png" alt=""></i></button>
+                       <button title="Add To Wishlist"><i><img src="image/heart.png" alt=""></i></button>
+                       <button title="Add To Cart"><i><img src="image/add.png" alt=""></i></button>
+
+                   </div>
+                   <img class="w-100" src="image/c8.png" alt="">
+                   <div class="content">
+                       <div>
+                           <h3>Choco Cake</h3>
+                           <div class="stars py-2">
+                               <i class="fa-solid fa-star checked"></i>
+                               <i class="fa-solid fa-star checked"></i>
+                               <i class="fa-solid fa-star "></i>
+                               <i class="fa-solid fa-star "></i>
+                               <i class="fa-solid fa-star "></i>
+                           </div>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                           <h6>$40.15 <span><button>Add Cart</button></span> </h6>
+                       </div>
+                   </div>
+               </div>
+           
+                   </div>
+       
+               </div>
+           </div>
+       </section>
+        <!-- product cards section end     -->
+
+
+        <!-- BIRTHDAY-CAKS section  -->
+       <section id="product-card" class="BIRTHDAY-CAKS" >
+                
+        <div class="container">
+           <h1 class="title" data-aos="fade-up"
+            data-aos-duration="1500">BIRTHDAY CAKE</h1>
+           <div class="row mt-5" >
+
+               <div class="col-lg-3 col-md-6 col-sm-12 py-3" data-aos="fade-up"
+                data-aos-duration="1500">
+                   
+                       
+                       <div class="card">
+                           <div class="overlay">
+                               <button title="Quick View"><i><img src="image/views.png" alt=""></i></button>
+                               <button title="Add To Wishlist"><i><img src="image/heart.png" alt=""></i></button>
+                               <button title="Add To Cart"><i><img src="image/add.png" alt=""></i></button>
+
+                           </div>
+                           <img class="w-100" src="image/c9.png" alt="">
+                           <div class="content">
+                               <div>
+                                   <h3>Birthday cake</h3>
+                                   <div class="stars py-2">
+                                       <i class="fa-solid fa-star checked"></i>
+                                       <i class="fa-solid fa-star checked"></i>
+                                       <i class="fa-solid fa-star checked"></i>
+                                       <i class="fa-solid fa-star checked"></i>
+                                       <i class="fa-solid fa-star checked"></i>
+                                   </div>
+                                   <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                   <h6>$500.10 <span><button>Add Cart</button></span> </h6>
+                               </div>
+                           </div>
+                       </div>
+                   
+               </div>
+
+               <div class="col-lg-3 col-md-6 col-sm-12 py-3" data-aos="fade-up"
+                data-aos-duration="1500">
+                   
+                       
+                   <div class="card">
+                       <div class="overlay">
+                           <button title="Quick View"><i><img src="image/views.png" alt=""></i></button>
+                           <button title="Add To Wishlist"><i><img src="image/heart.png" alt=""></i></button>
+                           <button title="Add To Cart"><i><img src="image/add.png" alt=""></i></button>
+
+                       </div>
+                       <img class="w-100" src="image/c10.png" alt="">
+                       <div class="content">
+                           <div>
+                               <h3>Bir Cup cake</h3>
+                               <div class="stars py-2">
+                                   <i class="fa-solid fa-star checked"></i>
+                                   <i class="fa-solid fa-star checked"></i>
+                                   <i class="fa-solid fa-star checked"></i>
+                                   <i class="fa-solid fa-star checked"></i>
+                                   <i class="fa-solid fa-star checked"></i>
+                               </div>
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                               <h6>$300.20 <span><button>Add Cart</button></span> </h6>
+                           </div>
+                       </div>
+                   </div>
+               
+               </div>
+
+               <div class="col-lg-3 col-md-6 col-sm-12 py-3" data-aos="fade-up"
+                data-aos-duration="1500">
+                   
+                       
+               <div class="card">
+                   <div class="overlay">
+                       <button title="Quick View"><i><img src="image/views.png" alt=""></i></button>
+                       <button title="Add To Wishlist"><i><img src="image/heart.png" alt=""></i></button>
+                       <button title="Add To Cart"><i><img src="image/add.png" alt=""></i></button>
+
+                   </div>
+                   <img class="w-100" src="image/c11.png" alt="">
+                   <div class="content">
+                       <div>
+                           <h3>Birthday cake</h3>
+                           <div class="stars py-2">
+                               <i class="fa-solid fa-star checked"></i>
+                               <i class="fa-solid fa-star checked"></i>
+                               <i class="fa-solid fa-star checked"></i>
+                               <i class="fa-solid fa-star checked"></i>
+                               <i class="fa-solid fa-star checked"></i>
+                           </div>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                           <h6>$100.50 <span><button>Add Cart</button></span> </h6>
+                       </div>
+                   </div>
+               </div>
+           
+               </div>
+               
+               <div class="col-lg-3 col-md-6 col-sm-12 py-3" data-aos="fade-up"
+                data-aos-duration="1500">
+                   
+                       
+           <div class="card">
+               <div class="overlay">
+                   <button title="Quick View"><i><img src="image/views.png" alt=""></i></button>
+                   <button title="Add To Wishlist"><i><img src="image/heart.png" alt=""></i></button>
+                   <button title="Add To Cart"><i><img src="image/add.png" alt=""></i></button>
+
+               </div>
+               <img class="w-100" src="image/c12.png" alt="">
+               <div class="content">
+                   <div>
+                       <h3>Fruit Cake</h3>
+                       <div class="stars py-2">
+                           <i class="fa-solid fa-star checked"></i>
+                           <i class="fa-solid fa-star checked"></i>
+                           <i class="fa-solid fa-star checked"></i>
+                           <i class="fa-solid fa-star checked"></i>
+                           <i class="fa-solid fa-star checked"></i>
+                       </div>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                       <h6>$137.20 <span><button>Add Cart</button></span> </h6>
+                   </div>
+               </div>
+           </div>
+       
+               </div>
+
+               
+   
+           </div>
+       </div>
+        </section>
+        <!-- BIRTHDAY-CAKS section end  -->
+       
+
+
+
+        
+
+        <!-- our-gallary section  -->
+
+        <section id="our-gallary" >
+
+            <div class="container">
+                <h1 class="title" data-aos="fade-up"
+                 data-aos-duration="1500">OUR GALLARY</h1>
+                <div class="row ">
+
+                    <div class="col-lg-4 col-md-6 py-3" data-aos="fade-up"
+                     data-aos-duration="1500">
+                        <div class="card position-relative">
+                            <div class="card-lay">
+                                <h3 class="gallary-h3">Donuts</h3>
+                            </div>
+                            <img class="gallary-img w-100" src="image/o1.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 py-3" data-aos="fade-up"
+                     data-aos-duration="1500">
+                        <div class="card position-relative">
+                            <div class="card-lay">
+                                <h3 class="gallary-h3">Ice Cream</h3>
+                            </div>
+                            <img class="gallary-img w-100" src="image/o2.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 py-3" data-aos="fade-up"
+                     data-aos-duration="1500">
+                        <div class="card position-relative">
+                            <div class="card-lay">
+                                <h3 class="gallary-h3">Cup Cake</h3>
+                            </div>
+                            <img class="gallary-img w-100" src="image/o3.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 py-3" data-aos="fade-up"
+                     data-aos-duration="1500">
+                        <div class="card position-relative">
+                            <div class="card-lay">
+                                <h3 class="gallary-h3">Delicious Cake</h3>
+                            </div>
+                            <img class="gallary-img w-100" src="image/o4.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 py-3" data-aos="fade-up"
+                     data-aos-duration="1500">
+                        <div class="card position-relative">
+                            <div class="card-lay">
+                                <h3 class="gallary-h3 fz">Chocolate Cake</h3>
+                            </div>
+                            <img class="gallary-img w-100" src="image/o5.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 py-3" data-aos="fade-up"
+                     data-aos-duration="1500">
+                        <div class="card position-relative">
+                            <div class="card-lay">
+                                <h3 class="gallary-h3">Slice Cake</h3>
+                            </div>
+                            <img class="gallary-img w-100" src="image/o6.png" alt="">
+                        </div>
+                    </div>
+           
+                </div>
+            </div>
+
+        </section>
+
+        <!-- our-gallary section end  -->
+
+
+        <!-- about us section  -->
+        <section id="about" >
+
+            <div class="container">
+                <h1 class="title" data-aos="fade-up"
+                 data-aos-duration="1500">ABOUT US</h1>
+                <div class="row ">
+
+                    <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"
+                     data-aos-duration="1500">                                                  
+                        <div class="image">
+                            <img class="w-100" src="image/about.png" alt="">
+                        </div>            
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"
+                     data-aos-duration="1500">                                                  
+                        <div class="content">
+                            <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias explicabo nulla dicta perferendis cupiditate autem assumenda unde fugit? Corrupti ipsa fugiat similique voluptate temporibus, cupiditate cumque iusto? Necessitatibus suscipit qui molestias odit ad aspernatur harum aliquid ipsam nisi, culpa quae, magnam dolores cupiditate velit exercitationem ratione deleniti dignissimos labore quia esse ea quos consequuntur perferendis aliquam. Est assumenda doloremque nobis, tenetur fuga similique eligendi nihil non officia possimus aliquid animi nisi ipsum qui veritatis repellat harum accusamus odit iusto laudantium voluptatum ipsa ut fugit veniam. Voluptates sint molestiae officia consequuntur iure repudiandae autem reiciendis, perspiciatis veritatis soluta quia velit necessitatibus.</p>
+                            <button>Read More...</button>
+                        </div>            
+                    </div>
+
+                    
+
+                </div>
+            </div>
+        </section>
+
+        <!-- about us section end -->
+
+        <!-- contact us section  -->
+        <section id="contact" >
+
+            <div class="container">
+                <h1 class="title" data-aos="fade-up"
+                 data-aos-duration="1500">CONTACT US</h1>
+                <div class="row ">
+
+                    <div class="col-md-4" data-aos="fade-up"
+                     data-aos-duration="1500">
+                        <div class="con-input">
+                            <input id="usr" class="form-control" type="text" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up"
+                     data-aos-duration="1500">
+                        <div class="con-input">
+                            <input id="eml" class="form-control" type="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up"
+                     data-aos-duration="1500">
+                        <div class="con-input">
+                            <input id="phn" class="form-control" type="number" placeholder="Phone">
+                        </div>
+                    </div>
+                </div>
+                <div class="con-textarea" data-aos="fade-up"
+                 data-aos-duration="1500">
+                    <textarea class="form-control" placeholder="Message" name="form-control" id="comment" rows="5"></textarea>
+                </div>
+                <div class="btn-msg"><button>Send Message</button></div>
+            </div>
+        </section>
+        <!-- contact us section end -->
+
+        <!-- footer  -->
+        <footer id="footer" data-aos="fade-up"
+        data-aos-duration="1500" >
+            <h1 class="text-center"  >Cake Bakery</h1>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, accusantium.</p>
+                    <div class="footer-icons" >
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-google"></i>
+                        <i class="fa-brands fa-skype"></i>
+                        <i class="fa-brands fa-instagram"></i>    
+                    </div>
+            <div class="copyright" >
+                &copy; Copyright <strong>Cake Bakery</strong> .All Rights Reserved
+            </div>
+            <div class="cridet">
+                Designed By <a href="https://www.facebook.com/profile.php?id=100009248987931">Ahmed Eid</a>
+            </div>
+        </footer>
+        <!-- footer end -->
+
+        <div class="arrow"> 
+            <a href="#navbar"><img src="image/up-arrow.png" alt=""></a>
+        </div>
+
+    </div>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- AOS Animate Liberary  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        AOS.init();
+    </script>
+    <!-- AOS Animate Liberary end -->
+</body>
+</html>

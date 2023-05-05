@@ -1,0 +1,557 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Uchen', serif;
+    scroll-behavior: smooth;
+}
+.all-content{
+    background: #2e1700;
+}
+
+/* navbar  */
+
+.navbar #logo img{
+    margin: 0 5px 15px 0;
+}
+
+.navbar #logo span{
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar{
+    background-color: #573818;
+    padding-left: 50px ;
+}
+
+.navbar .nav-item{
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar .nav-item .nav-link{
+    font-weight: bold;
+    color: white ;
+    text-decoration: none;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: 0.5s ease;
+}
+
+.navbar .nav-item .nav-link:hover{
+    background-color: rgba(161,109,14,1);
+}
+
+.social-icons .nav-icon i{
+    margin: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.social-icons .nav-icon i:hover{
+    transform: translateY(-5px);
+}
+
+@media screen and (max-width:350px) {
+    .navbar #logo span{
+        font-size: 18px;
+    }
+    
+}
+/* navbar end  */
+
+/* home section  */
+
+.home{
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(image/background2.png);
+    background-size: cover;
+    flex-wrap: wrap;
+    height: 88vh;
+}
+
+
+.home-content{
+    flex: 1 1 400px;
+    margin-left: 60px;
+}
+
+.home-image{
+    flex: 1 1 400px;
+}
+.home-image img{
+    width: 100%;
+}
+
+.home-content h2{
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+.home-content h3{
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.home-content .move::after{
+    content: '';
+    color: rgb(161,109,14);
+    font-weight: bold;
+    animation: moves 10s  infinite linear;
+}
+
+@keyframes moves{
+    0%{content: "Birthday Cak"}
+    25%{content: "Chocolate Cake"}
+    50%{content: "Party Cake"}
+    75%{content: "Slice Cake"}
+    100%{content: "Cup Cake"}
+}
+.home-content p{
+    text-shadow: 1px 1px 1px black;
+}
+.home-content .btn{
+    width: 110;
+    height: 38px;
+    color: white !important;
+    background-color: #573818;
+    text-decoration: none;
+    transition: 0.5s ease;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.home-content .btn:hover{
+    background-color: rgb(161,109,14);
+    border: solid 1px white;
+    box-shadow: 0 0 20px #573818 , 0 0 20px #573818, 0 0 20px #573818;
+}
+
+@media screen and (max-width:860px) {
+    .home{
+        height: 120vh;
+    }
+}
+@media screen and (max-width:800px) {
+    .home-content h3{
+        font-size: 50px;
+    }
+    
+}
+@media screen and (max-width:560px) {
+    .home{
+        height: 100vh;
+    } 
+}
+@media screen and (max-width:560px) {
+    
+    .home-content h3{
+        font-size: 30px;
+    }
+    .home-content h2{
+        font-size: 30px;
+    }
+    
+    
+}
+/* home section end */
+
+/* top cards  */
+.box-cards{
+    margin-top: 50px;
+}
+
+#boxs .card{
+    margin: 10px 0;  
+    cursor: pointer;
+    box-shadow: 10px 10px 50px rgb(161,109,14);
+    transition: 0.5s ease; 
+} 
+
+#boxs .card:hover{
+    transform: translatey(-20px);
+}
+/* top cards end */
+
+/* discount section */
+
+#discount{
+    box-shadow: 1px 1px 20px black;
+}
+
+.discount{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(image/banner2.png);
+    background-size: cover;
+    margin-top: 50px;
+}
+.discount-content{
+    flex: 1 1 400px;
+    margin-top: 60px;
+}
+
+.discount-image{
+    flex: 1 1 400px;
+}
+
+.discount-content h2{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgba(161,109,14,1);
+    text-shadow: 1px 1px 1px black;
+}
+.discount-content h3{
+    font-weight: bold;
+    color: rgba(161,109,14,1);
+}
+
+.discount-content p{
+    font-weight: bold;
+    color: rgba(161,109,14,1);
+}
+.discount-content .btn-discount button{
+    width: 150px;
+    height: 32px;
+    letter-spacing: 5px;
+    color: white;
+    background-color: rgba(161,109,14,1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: 0.5s ease;
+}
+
+.discount-content .btn-discount button:hover{
+    background-color: rgb(161,109,14);
+    border: solid 1px white;
+    box-shadow: 0 0 20px #573818 , 0 0 20px #573818, 0 0 20px #573818;
+}
+
+@media screen and (max-width:860px){
+    .discount{
+        height: 120vh;
+    }
+}
+
+
+/* discount section end */
+
+
+/* product cards  */
+.title{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: rgba(161,109,14,1);
+    text-shadow: 1px 1px 1px black;
+    border-bottom: solid 2px rgba(161,109,14,1);
+}
+
+#product-card .card{
+    background-color: rgba(161,109,14,1);
+    box-shadow: 0 0 3px black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#product-card .content{
+    border: none;
+
+}
+#product-card .content{
+    padding: 0 20px;
+}
+#product-card .content h3{
+    color: white;
+    padding-top: 20px;
+    text-shadow: 1px 1px 1px black;
+}
+#product-card .content p{
+    color: #2e1700;
+    font-weight: bold;
+}
+#product-card .content h6{
+    color: #2e1700;
+    font-size: 20px;
+    font-weight: bold;
+}
+#product-card .content h6 span button{
+    width: 100px;
+    height: 26px;
+    border-radius: 5px;
+    background-color: transparent;
+    letter-spacing: 3px;
+    font-size: 15px;
+    font-weight: bold;
+    border: solid 2px #573818;
+    transition: 0.5s ease;
+    float: right;
+}
+
+#product-card .content h6 span button:hover{
+    background-color: #2e1700;
+    color: white;
+}
+
+#product-card  .checked{
+    color: yellow;
+}
+
+#product-card .overlay{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    opacity: 0;
+    width: 70px;
+}
+
+#product-card .card:hover .overlay{
+    left: 5%;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+#product-card .card:hover {
+    /* border-right: solid 5px yellow; */
+    border-left: solid 2px yellow;
+    transition: 0.2s ;
+}
+
+#product-card .overlay button {
+    display: block;
+    background-color: #2e1700;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 10%;
+    border-radius: 5px;
+    border: none;
+    padding: 3px;
+}
+#product-card .overlay button img{
+    width: 80%;
+}
+
+/* product cards end  */
+
+
+
+/* our-gallary  */
+
+#our-gallary .card{
+    cursor: pointer;
+}
+#our-gallary .card-lay {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+    transition: 0.3s ease;
+}
+
+#our-gallary .card:hover .card-lay{
+    background-color: rgba(0,0,0,0.5);
+
+} 
+#our-gallary .gallary-h3{
+    color: white;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 1.5rem;
+    transition: 0.3s linear;
+    text-align: center;
+}
+#our-gallary .card:hover .gallary-h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    transform: translateX(-50%);
+}
+/* our-gallary end */
+
+/* about us section */
+#about .image{
+    background-color: rgba(161,109,14,1);
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+}
+
+#about .content p{
+    color: rgba(161,109,14,1);
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#about .content button {
+    color: white;
+    background-color: rgba(161,109,14,1);
+    width: 150px;
+    height: 32px;
+    border: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+#about .content button:hover{
+    background-color: rgb(161,109,14);
+    border: solid 1px white;
+    box-shadow: 0 0 20px #573818 , 0 0 20px #573818, 0 0 20px #573818;
+}
+
+@media screen and (max-width:1200px) {
+    #about .content p{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:992px) {
+    #about .content p{
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width:767px) {
+    #about .content p{
+        font-size: 1rem;
+    }
+}
+
+/* about us section end */
+
+/* contact us section */
+#contact input{
+    background-color: rgb(161,109,14);
+    width: 100%;
+    padding: 5px ;
+    margin: 20px 0;
+    border: solid 1px white;
+    border-radius: 5px;
+}
+
+#contact input::placeholder{
+    color: white;
+}
+
+#contact textarea{
+    background-color: rgb(161,109,14);
+    width: 100%;
+    padding: 5px;
+    margin: 20px 0;
+    border-color:teal ;
+    border: solid 1px white;
+    border-radius: 5px;
+}
+#contact .con-textarea{
+    text-align: center;
+}
+#contact textarea::placeholder{
+    color: white;
+}
+
+#contact .btn-msg{
+    text-align: center;
+}
+
+#contact .btn-msg button{
+    width: 200px;
+    height: 30px;
+    color: white;
+    background-color: transparent;
+    letter-spacing: 3px;
+    font-weight: bold;
+    border: solid 2px white;
+    transition: 0.5s ease;
+    border-radius: 5px;
+}
+
+#contact .btn-msg button:hover{
+    background-color: rgb(161,109,14);
+}
+/* contact us section end */
+
+/* footer */
+#footer{
+    margin-top: 100px;
+    background-color: #573818;
+    box-shadow: 0 0 5px black;
+    text-align: center;
+}
+
+#footer h1{
+    width: 100%;
+    padding-top: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+#footer p{
+    color: white;
+}
+
+#footer .copyright{
+    color: white;
+    margin-top: 20px;
+}
+
+#footer .cridet{
+    color: white;
+    padding: 5px 0;
+}
+
+#footer .cridet a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.footer-icons{
+    text-align: center;
+    margin-left: 30px;
+   
+}
+
+#footer i{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: white; 
+    color: #573818;
+    font-size: 30px; 
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#footer i:hover{
+    background-color: rgb(161,109,14);
+    color: white;
+}
+/* footer end */
+
+.arrow {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(161,109,14);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+}
+
+.arrow img{
+    width: 100%;
+    height: 100%;
+}
